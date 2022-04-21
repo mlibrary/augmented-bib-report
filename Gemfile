@@ -7,4 +7,5 @@ group :development, :test do
   gem "rspec"
   gem "simplecov"
   gem "standard"
+  gem "webmock"
 end
