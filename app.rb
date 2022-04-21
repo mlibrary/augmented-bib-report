@@ -3,3 +3,9 @@ class ToBeRemoved
     "test"
   end
 end
+
+require "sinatra"
+
+get "/" do
+  "Hello World"
+end

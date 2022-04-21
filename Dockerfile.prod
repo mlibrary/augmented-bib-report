@@ -25,4 +25,8 @@ ENV BUNDLE_PATH /gems
 
 WORKDIR /app
 
+##For a production build copy the app files and run bundle install
+COPY --chown=${UID}:${GID} . /app
+RUN bundle _${BUNDLER_VERSION}_ install
+
 CMD ["bundle", "exec", "ruby", "app.rb", "-o", "0.0.0.0"]
