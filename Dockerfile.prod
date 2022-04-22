@@ -22,10 +22,10 @@ RUN mkdir -p /gems && chown ${UID}:${GID} /gems
 USER $UNAME
 
 ENV BUNDLE_PATH /gems
+ENV BUNDLE_WITHOUT development:test
 
 WORKDIR /app
 
-##For a production build copy the app files and run bundle install
 COPY --chown=${UID}:${GID} . /app
 RUN bundle _${BUNDLER_VERSION}_ install
 
