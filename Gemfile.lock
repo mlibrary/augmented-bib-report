@@ -22,6 +22,10 @@ GEM
     diff-lcs (1.5.0)
     digest (3.1.0)
     docile (1.4.0)
+    faraday (2.4.0)
+      faraday-net_http (~> 2.0)
+      ruby2_keywords (>= 0.0.4)
+    faraday-net_http (2.1.0)
     hashdiff (1.0.1)
     hashie (5.0.0)
     httpclient (2.8.3)
@@ -156,6 +160,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  faraday
   net-smtp
   omniauth (~> 1.9)
   omniauth_openid_connect (~> 0.3.5)

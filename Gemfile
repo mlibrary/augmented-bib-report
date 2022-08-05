@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem "sinatra"
+gem "faraday"
 gem "puma"
 gem "omniauth", "~>1.9"
 gem "omniauth_openid_connect", "~>0.3.5"
