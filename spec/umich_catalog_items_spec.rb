@@ -1,8 +1,8 @@
 describe UmichCatalogItems do
   context "one item" do
-    before (:each) do
+    before(:each) do
       @doc = JSON.parse(fixture("solr_doc.json"))
-      @barcode = "39015009714562" 
+      @barcode = "39015009714562"
     end
     subject do
       described_class.new([@doc]).item_for_barcode(@barcode)
@@ -27,15 +27,12 @@ describe UmichCatalogItems do
       @doc["hol"] = @doc["hol"].sub("description\":null", "description\":\"description\"")
       expect(subject.description).to eq("description")
     end
-    it "returns the #oclc number" do
-      expect(subject.oclc).to eq("6961296")
-    end
-    it "returns multiple oclc numbers delimited by a |" do
+    it "returns multiple oclc numbers in an arry" do
       @doc["oclc"].push("oclc12345")
-      expect(subject.oclc).to eq("6961296|oclc12345")
+      expect(subject.oclc).to eq(["6961296", "oclc12345"])
     end
     it "returns the number of copies um has"
     it "returns HathiTrust link"
-    it "returns electronic record links" 
+    it "returns electronic record links"
   end
 end

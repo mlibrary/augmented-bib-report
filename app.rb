@@ -5,6 +5,7 @@ require_relative "./lib/monkey_httpclient"
 require_relative "./lib/omniauth_setup"
 require_relative "./lib/catalog_solr_client"
 require_relative "./lib/umich_catalog_items"
+require_relative "./lib/report_generator"
 
 get "/" do
   "Hello World"
