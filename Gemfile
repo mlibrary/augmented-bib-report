@@ -3,8 +3,8 @@ source "https://rubygems.org"
 gem "sinatra"
 gem "faraday"
 gem "puma"
-gem "omniauth", "~>1.9"
-gem "omniauth_openid_connect", "~>0.3.5"
+gem "omniauth"
+gem "omniauth_openid_connect"
 
 # In order to get this to work with ruby 3.1. Maybe later see if it's still necessary
 gem "net-smtp", require: false

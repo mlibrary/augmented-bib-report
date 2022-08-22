@@ -35,7 +35,20 @@ get "/logout" do
 end
 
 get "/login" do
-  redirect "/auth/openid_connect"
+  <<~HTML
+    <h1>Logging You In...<h1>
+    <script>
+      window.onload = function(){
+        document.forms['login_form'].submit();
+      }
+    </script>
+    <form id='login_form' method='post' action='/auth/openid_connect'>
+      <input type="hidden" name="authenticity_token" value='#{request.env["rack.session"]["csrf"]}'>
+      <noscript>
+        <button type="submit">Login</button>
+      </noscript>
+    </form>
+  HTML
 end
 
 before do
@@ -50,10 +63,10 @@ before do
 
   # authenticated but expired go relogin
   if session[:authenticated] && Time.now.utc > session[:expires_at]
-    redirect "/auth/openid_connect"
+    redirect "login"
   elsif !session[:authenticated]
     # for now, always authenticate
-    redirect "/auth/openid_connect"
+    redirect "login"
   end
 end
 
