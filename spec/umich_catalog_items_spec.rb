@@ -31,7 +31,9 @@ describe UmichCatalogItems do
       @doc["oclc"].push("oclc12345")
       expect(subject.oclc).to eq(["6961296", "oclc12345"])
     end
-    it "returns the number of copies um has"
+    it "returns the list of UM libraries that have items" do
+      expect(subject.umich_libraries).to eq(["MUSIC"])
+    end
     it "returns HathiTrust item array" do
       expect(subject.hathi_items).to eq(["inu.30000042758924"])
     end
