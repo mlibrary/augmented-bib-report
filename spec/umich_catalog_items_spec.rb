@@ -35,10 +35,10 @@ describe UmichCatalogItems do
     it "returns HathiTrust item array" do
       expect(subject.hathi_items).to eq(["inu.30000042758924"])
     end
-    it "returns array of portfolio ids links" do
+    it "returns array of links" do
       @doc = JSON.parse(fixture("solr_elec_doc.json"))
       @barcode = "39015090074744"
-      expect(subject.electronic_items).to eq(["531055396990006381"])
+      expect(subject.electronic_items).to eq(["https://na04.alma.exlibrisgroup.com/view/uresolver/01UMICH_INST/openurl-UMAA?u.ignore_date_coverage=true&portfolio_pid=531055396990006381&Force_direct=true"])
     end
   end
 end

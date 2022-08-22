@@ -63,7 +63,7 @@ class UmichCatalogItems
 
     def electronic_items
       @electronic_items ||= JSON.parse(@doc["hol"]).filter_map do |x|
-        CGI.parse(URI.parse(x["link"]).query)&.dig("portfolio_pid")&.first if x["library"] == "ELEC"
+        x["link"] if x["library"] == "ELEC"
       end
     end
   end
