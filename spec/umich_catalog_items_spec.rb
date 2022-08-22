@@ -32,7 +32,13 @@ describe UmichCatalogItems do
       expect(subject.oclc).to eq(["6961296", "oclc12345"])
     end
     it "returns the number of copies um has"
-    it "returns HathiTrust link"
-    it "returns electronic record links"
+    it "returns HathiTrust item array" do
+      expect(subject.hathi_items).to eq(["inu.30000042758924"])
+    end
+    it "returns array of portfolio ids links" do
+      @doc = JSON.parse(fixture("solr_elec_doc.json"))
+      @barcode = "39015090074744"
+      expect(subject.electronic_items).to eq(["531055396990006381"])
+    end
   end
 end

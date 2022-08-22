@@ -1,0 +1,129 @@
+{
+  "title": "Gender studies and policy review.",
+  "author": "한국 여성 정책 연구원.",
+  "publisher": "Korean Women's Development Institute",
+  "date": "",
+  "OCLCnumber": "367682314",
+  "library": [
+    {
+      "institutionName": "Columbia University in the City of New York",
+      "streetAddress1": "535 West 114th Street",
+      "streetAddress2": "",
+      "city": "New York",
+      "state": "NY",
+      "country": "United States",
+      "postalCode": "10027",
+      "opacUrl": "https://www.worldcat.org/wcpa/oclc/367682314?page=frame&url=http%3A%2F%2Fclio.columbia.edu%2Fcatalog%2F%3Fsearch_field%3Dissn%26q%3D2005-5919%26checksum%3D58f7a78b88815ed250567ce62a13d984&title=Columbia+University+in+the+City+of+New+York&linktype=opac&detail=ZCU%3AColumbia+University+in+the+City+of+New+York%3AARL Library&app=wcapi&id=OCPSB-",
+      "oclcSymbol": "ZCU",
+      "distance": "182.23"
+    },
+    {
+      "institutionName": "Rutgers University Libraries",
+      "streetAddress1": "Technical Services Building - ILL",
+      "streetAddress2": "47 Davidson Road",
+      "city": "Piscataway",
+      "state": "NJ",
+      "country": "United States",
+      "postalCode": "08854",
+      "opacUrl": "https://www.worldcat.org/wcpa/oclc/367682314?page=frame&url=https%3A%2F%2Frutgers.primo.exlibrisgroup.com%2Fdiscovery%2Fsearch%3Fvid%3D01RUT_INST%3A01RUT%26sortby%3Drank%26lang%3Den_US%26query%3Dany%2Ccontains%2C2005-5919%26checksum%3D083b172aefcec3da2d8a02171a979770&title=Rutgers+University+Libraries&linktype=opac&detail=NJR%3ARutgers+University+Libraries%3AARL Library&app=wcapi&id=OCPSB-",
+      "oclcSymbol": "NJR",
+      "distance": "214.12"
+    },
+    {
+      "institutionName": "Princeton University Library",
+      "streetAddress1": "Firestone Libr",
+      "streetAddress2": "1 Washington Rd",
+      "city": "Princeton",
+      "state": "NJ",
+      "country": "United States",
+      "postalCode": "08544",
+      "opacUrl": "https://www.worldcat.org/wcpa/oclc/367682314?page=frame&url=https%3A%2F%2Fcatalog.princeton.edu%2Fcatalog%3Fq%3Dissn_s%253A2005-5919%26checksum%3D5eb33d8f7d2c8d8a2904918da29371a2&title=Princeton+University+Library&linktype=opac&detail=PUL%3APrinceton+University+Library%3AARL Library&app=wcapi&id=OCPSB-",
+      "oclcSymbol": "PUL",
+      "distance": "231.06"
+    },
+    {
+      "institutionName": "University of Pennsylvania Libraries",
+      "streetAddress1": "Library",
+      "streetAddress2": "3420 Walnut St",
+      "city": "Philadelphia",
+      "state": "PA",
+      "country": "United States",
+      "postalCode": "19104",
+      "opacUrl": "https://www.worldcat.org/wcpa/oclc/367682314?page=frame&url=https%3A%2F%2Ffranklin.library.upenn.edu%2Fcatalog%3Futf8%3D%3F%26search_field%3Disxn_search%26q%3D2005-5919%26checksum%3D50da2bf40b708070b7551d0ed4657fdd&title=University+of+Pennsylvania+Libraries&linktype=opac&detail=PAU%3AUniversity+of+Pennsylvania+Libraries%3AARL Library&app=wcapi&id=OCPSB-",
+      "oclcSymbol": "PAU",
+      "distance": "270.11"
+    },
+    {
+      "institutionName": "Cornell University Library",
+      "streetAddress1": "201 Olin Library",
+      "streetAddress2": "",
+      "city": "Ithaca",
+      "state": "NY",
+      "country": "United States",
+      "postalCode": "14853",
+      "opacUrl": "https://www.worldcat.org/wcpa/oclc/367682314?page=frame&url=https%3A%2F%2Fnewcatalog.library.cornell.edu%2Fisbnissn%2F2005-5919%26checksum%3D4a6fd6aa7c84895cdc7df98b931c7a05&title=Cornell+University+Library&linktype=opac&detail=COO%3ACornell+University+Library%3AARL Library&app=wcapi&id=OCPSB-",
+      "oclcSymbol": "COO",
+      "distance": "274.68"
+    },
+    {
+      "institutionName": "Library of Congress",
+      "streetAddress1": "101 Independence Avenue, SE",
+      "streetAddress2": "",
+      "city": "Washington",
+      "state": "DC",
+      "country": "United States",
+      "postalCode": "20540",
+      "opacUrl": "https://www.worldcat.org/wcpa/oclc/367682314?page=frame&url=https%3A%2F%2Fcatalog.loc.gov%2Fvwebv%2Fsearch%3FsearchCode%3DSTNO%26searchType%3D1%26recCount%3D25%26searchArg%3D2005-5919%26checksum%3Daae68113c7dbc61b1243cb7cca4092ef&title=Library+of+Congress&linktype=opac&detail=DLC%3ALibrary+of+Congress%3AState or National Library&app=wcapi&id=OCPSB-",
+      "oclcSymbol": "DLC",
+      "distance": "391.65"
+    },
+    {
+      "institutionName": "University of Toronto Robarts Library",
+      "streetAddress1": "130 St-George Street",
+      "streetAddress2": "",
+      "city": "Toronto",
+      "state": "ON",
+      "country": "Canada",
+      "postalCode": "M5S 1A5",
+      "opacUrl": "https://www.worldcat.org/wcpa/oclc/367682314?page=frame&url=https%3A%2F%2Flibrarysearch.library.utoronto.ca%2Fdiscovery%2Fsearch%3Fvid%3D01UTORONTO_INST%3AUTORONTO%26lang%3Den%26pfilter%3Drtype%2Cexact%2Cjournals%26query%3Dissn%2Cexact%2C2005-5919%26checksum%3Dc0696a7e90e5c8ffa7c895d3403437ed&title=University+of+Toronto+Robarts+Library&linktype=opac&detail=UTO%3AUniversity+of+Toronto+Robarts+Library%3AAcademic Library&app=wcapi&id=OCPSB-",
+      "oclcSymbol": "UTO",
+      "distance": "428.42"
+    },
+    {
+      "institutionName": "University of Pittsburgh",
+      "streetAddress1": "4200 Fifth Ave",
+      "streetAddress2": "3960 Forbes Ave",
+      "city": "Pittsburgh",
+      "state": "PA",
+      "country": "United States",
+      "postalCode": "15260",
+      "opacUrl": "https://www.worldcat.org/wcpa/oclc/367682314?page=frame&url=https%3A%2F%2Fpitt.primo.exlibrisgroup.com%2Fdiscovery%2Fsearch%3Fvid%3D01PITT_INST%3A01PITT_INST%26sortby%3Drank%26lang%3Den%26query%3Dany%2Ccontains%2C402405733%26checksum%3D06c1b9bb36934233b8d63bdd92015f03&title=University+of+Pittsburgh&linktype=opac&detail=PIT%3AUniversity+of+Pittsburgh%3AARL Library&app=wcapi&id=OCPSB-",
+      "oclcSymbol": "PIT",
+      "distance": "476.87"
+    },
+    {
+      "institutionName": "Duke University Libraries",
+      "streetAddress1": "411 Chapel Drive",
+      "streetAddress2": "PO Box 90188",
+      "city": "Durham",
+      "state": "NC",
+      "country": "United States",
+      "postalCode": "27708",
+      "opacUrl": "https://www.worldcat.org/wcpa/oclc/367682314?page=frame&url=https%3A%2F%2Ffind.library.duke.edu%2F%3Futf8%3D%25E2%259C%2593%26search_field%3Dissn%26q%3D2005-5919%26checksum%3De9ddf536813010281b19c70f8c658b27&title=Duke+University+Libraries&linktype=opac&detail=NDD%3ADuke+University+Libraries%3AAcademic Library&app=wcapi&id=OCPSB-",
+      "oclcSymbol": "NDD",
+      "distance": "607.38"
+    },
+    {
+      "institutionName": "Ohio State University Libraries",
+      "streetAddress1": "1858 Neil Avenue",
+      "streetAddress2": "",
+      "city": "Columbus",
+      "state": "OH",
+      "country": "United States",
+      "postalCode": "43210",
+      "opacUrl": "https://www.worldcat.org/wcpa/oclc/367682314?page=frame&url=http%3A%2F%2Flibrary.ohio-state.edu%2Fsearch%2Fo881524063%26checksum%3D6644ba8d5dc9ea093a25206bb2941a10&title=Ohio+State+University+Libraries&linktype=opac&detail=OSU%3AOhio+State+University+Libraries%3AARL Library&app=wcapi&id=OCPSB-",
+      "oclcSymbol": "OSU",
+      "distance": "640.19"
+    }
+  ]
+}

@@ -15,6 +15,7 @@ class UmichCatalogItems
   end
 
   class Item
+    attr_accessor :barcode
     def initialize(doc:, barcode:)
       @doc = doc
       @barcode = barcode
@@ -50,8 +51,20 @@ class UmichCatalogItems
 
     def umich_holding_item
       @umich_holding_item ||= JSON.parse(@doc["hol"]).filter do |x|
-        !["HathiTrust Digital Library"].include?(x["library"])
+        !["HathiTrust Digital Library", "ELEC"].include?(x["library"])
       end&.pluck("items")&.flatten&.find { |y| y["barcode"] == @barcode }
+    end
+
+    def hathi_items
+      @hathi_items ||= JSON.parse(@doc["hol"]).find do |x|
+        x["library"] == "HathiTrust Digital Library"
+      end&.dig("items")&.pluck("id")
+    end
+
+    def electronic_items
+      @electronic_items ||= JSON.parse(@doc["hol"]).filter_map do |x|
+        CGI.parse(URI.parse(x["link"]).query)&.dig("portfolio_pid")&.first if x["library"] == "ELEC"
+      end
     end
   end
 end
