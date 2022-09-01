@@ -3,6 +3,7 @@ class WorldCatClient
     @conn = Faraday.new(
       url: "http://worldcat.org"
     ) do |f|
+      f.response :logger, nil, {headers: true, bodies: true}
       f.request :json
       #  f.request :retry, {max: 1, retry_statuses: [500]}
       f.response :json

@@ -48,9 +48,10 @@ class UmichCatalogItems
     def inventory_number
       umich_holding_item&.dig("inventory_number")
     end
+
     def umich_libraries
       JSON.parse(@doc["hol"]).filter_map do |x|
-       x["library"] if !["HathiTrust Digital Library", "ELEC"].include?(x["library"])
+        x["library"] if !["HathiTrust Digital Library", "ELEC"].include?(x["library"])
       end.uniq
     end
 
