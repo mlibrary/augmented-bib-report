@@ -3,9 +3,9 @@ class WorldCatClient
     @conn = Faraday.new(
       url: "http://worldcat.org"
     ) do |f|
-      f.response :logger, nil, {headers: true, bodies: true}
+      # f.response :logger, nil, {headers: true, bodies: true}
       f.request :json
-      #  f.request :retry, {max: 1, retry_statuses: [500]}
+      f.request :retry, {max: 1, retry_statuses: [500]}
       f.response :json
     end
   end
@@ -17,6 +17,7 @@ class WorldCatClient
   def libraries_for_oclc_num(oclc)
     query = {
       maximumLibraries: 50,
+      location: 48103,
       wskey: ENV.fetch("WORLDCAT_API_KEY"),
       format: "json"
     }
