@@ -2,22 +2,31 @@ class ReportGenerator
   def initialize(barcodes: [])
     @barcodes = barcodes
     @umich_catalog_items = UmichCatalogItems.for(barcodes: @barcodes)
+    Logger.new($stdout).info("fetched umich catalog items")
   end
 
   def run
     queue = Queue.new
     queue.push(header_row)
 
-    @barcodes.each do |barcode|
-      umich_item = @umich_catalog_items.item_for_barcode(barcode)
-      next if umich_item.nil?
-      worldcat_summary = WorldCatSummary.for(umich_item.oclc || [])
+    barcode_queue = @barcodes.inject(Queue.new, :push)
 
-      queue.push(
-        format_line(umich_item: umich_item, worldcat_summary: worldcat_summary)
-      )
+    threads = Array.new(ENV.fetch(MAX_THREADS)) do
+      Thread.new do
+        until barcode_queue.empty?
+          barcode = barcode_queue.shift
+          umich_item = @umich_catalog_items.item_for_barcode(barcode)
+          next if umich_item.nil?
+          worldcat_summary = WorldCatSummary.for(umich_item.oclc || [])
+
+          queue.push(
+            format_line(umich_item: umich_item, worldcat_summary: worldcat_summary)
+          )
+        end
+      end
     end
 
+    threads.each(&:join)
     print(queue)
   end
 
