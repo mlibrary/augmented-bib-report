@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem "sinatra"
 gem "faraday"
+gem "faraday-retry"
 gem "puma"
 gem "omniauth"
 gem "omniauth_openid_connect"

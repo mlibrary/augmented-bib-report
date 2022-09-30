@@ -26,6 +26,8 @@ GEM
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.0)
+    faraday-retry (2.0.0)
+      faraday (~> 2.0)
     hashdiff (1.0.1)
     hashie (5.0.0)
     httpclient (2.8.3)
@@ -166,6 +168,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   faraday
+  faraday-retry
   net-smtp
   omniauth
   omniauth_openid_connect
